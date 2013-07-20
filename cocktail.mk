@@ -77,20 +77,28 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-# Video
+
+# Graphics
 PRODUCT_PACKAGES += \
-    gralloc.cocktail \
-    copybit.cocktail \
+    gralloc.msm7x30 \
+    copybit.msm7x30 \
+    hwcomposer.default \
+    hwcomposer.msm7x30 \
     overlay.default \
+    libgenlock \
+    libmemalloc \
+    libQcomUI \
+    libtilerenderer \
     liboverlay
 
-# Video
+# QCOM OMX
 PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore \
-    libOmxVenc \
     libOmxVdec \
-    libstagefrighthw
+    libOmxVenc \
+    libstagefrighthw \
+    libdivxdrmdecrypt
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
